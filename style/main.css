@@ -1,0 +1,283 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+div{
+	color: blue;
+}
+body{
+	font-family: Arial, sans-serif;
+	background: #f1f1f1;
+}
+#header{
+	display: grid;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 67px;
+	background: white;
+	box-shadow: 1px 1px 10px black;
+	z-index: 99;
+}
+#content{
+	display: grid;
+	grid-template-rows: 100vh 100vh 100vh 125vh;
+}
+#footer{
+	display: grid;
+	grid-template-rows: 25vh 25vh;
+	background: black;
+	justify-items: center;
+	align-items: center;
+	color: white;
+}
+.footerUst{
+	margin-top: 15vh;
+}
+.footerUst a{
+	color: black;
+	background: white;
+	padding: 2vh;
+	opacity: 0.8;
+	text-decoration: none;
+}
+.footerUst a:hover{
+	opacity: 1;
+}
+.footerAlt ul{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	margin-bottom: 15vh;
+}
+.footerAlt ul li{
+	list-style: none;
+	font-size: 4vh;
+	margin: 1vh;
+}
+.footerAlt ul li a{
+	color: white;
+}
+.footerAlt ul li a:hover{
+	opacity: 0.8;
+}
+.footerYazi{
+	color: white;
+}
+#ilkGiris{
+	background-position: center;
+    background-size: cover;
+    background-image: url(../assets/mac.jpg);
+	display: grid;
+	grid-template-rows: 5fr 1fr;
+}
+#altKisim1{
+	display: grid;
+	grid-template-rows: 2fr 3fr;
+	background: white;
+}
+.altKisim1Box{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#altKisim2{
+	background: #f1f1f1;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 15vh;
+	margin-bottom: 15vh;
+}
+.altBox-2-resim{
+	background-position: center;
+    background-size: cover;
+    background-image: url(../assets/phone_buildings.jpg);
+	border-radius: 3vh;
+}
+.altBox-2{
+	margin-right: 3vh;
+	margin-left: 3vh;
+	color: black;
+}
+.altBox-2 h4{
+	opacity: 0.8;
+}
+.altBox-2 a{
+	background: black;
+	padding: 2vh;
+	text-decoration: none;
+	color: white;
+}
+.altBox-2 a:hover{
+	background: gray;
+}
+#altKisim3{
+	display: grid;
+	grid-template-rows: 2fr 3fr;
+	background: white;
+}
+.Box-3Header img{
+	width: 100%;
+	vertical-align: middle;
+	filter: grayscale(75%);
+}
+.altKisim3Box{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 3vh;
+	margin-left: 3vh;
+	margin-right: 3vh;
+}
+.altBox-3{
+	display: grid;
+	grid-template-rows: 5fr 6fr;
+	box-shadow: 1px 2px 5px black;
+	margin-bottom: 2vh;
+}
+.Box-3Body{
+	display: grid;
+	align-items: center;
+	margin-left: 1vh;
+	margin-right: 1vh;
+}
+.Box-3Baslik{
+	color: black;
+	opacity: 0.9;
+}
+.Box-3Info{
+	color: black;
+	opacity: 0.7;
+}
+.Box-3Yazi{
+	color: black;
+	opacity: 0.8;
+}
+.Box-3Button a{
+	background: #f1f1f5;
+	display: grid;
+	justify-items: center;
+	padding: 2vh;
+	color: black;
+	text-decoration: none;
+	grid-template-columns: auto auto;
+	justify-content: center;
+}
+.Box-3Button a:hover{
+	background: black;
+	color: white;
+}
+
+.altKisim3Yazi{
+	display: grid;
+	justify-items: center;
+	margin-top: 20vh;
+	color: black;
+	opacity: 0.8;
+}
+.altKisim3Yazi h2{
+	display: grid;
+	align-items: end;
+}
+#header ul{
+	display: grid;
+	justify-content: end;
+	align-items: center;
+	grid-template-columns: auto auto auto auto;
+}
+#header ul li{
+	list-style: none;
+}
+#header ul li a{
+	text-decoration: none;
+	padding: 25px;
+	color: black;
+	opacity: 0.9;
+}
+#header ul li a:hover{
+	background: gray;
+}
+.girisBox{
+	display: grid;
+	padding-top: 25vh;
+	justify-content: start;
+	color: white;
+	font-family: 'Trebuchet MS', sans-serif;
+	padding-left: 8vh;
+}
+.girisBox h1{
+	font-size: 60px;
+}
+.girisBox h2{
+	font-size: 25px;
+	opacity: 0.8;
+}
+.girisBox ul li{
+	list-style: none;
+}
+.girisBox a{
+	color: black;
+	background: white;
+	text-decoration: none;
+	padding: 20px;
+	opacity: 0.7;
+}
+.girisBox a:hover{
+	opacity: 0.9;
+}
+.girisBox-Sosyal ul{
+	display: grid;
+	justify-content: start;
+	padding-left: 8vh;
+	padding-top: 8vh;
+	grid-template-columns: auto auto auto auto auto;
+}
+.girisBox-Sosyal ul li{
+	list-style: none;
+}
+.girisBox-Sosyal ul li a{
+	font-size: 4vh;
+	text-decoration: none;
+	color: gray;
+	opacity: 0.7;
+	padding: 1vh;
+}
+.girisBox-Sosyal ul li a:hover{
+	opacity: 0.9;
+}
+.altKisim1Yazi{
+	color: black;
+	opacity: 0.7;
+	display: grid;
+	justify-content: center;
+	padding-bottom: 3vh;
+	grid-template-rows: auto auto;
+	text-decoration: center;
+	padding-top: 20vh;
+}
+.altKisim1Yazi h2{
+	padding-top: 5vh;
+	padding-left: 1vh;
+}
+
+
+.altBox-1{
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 5vh;
+}
+.altBox-icon{
+	font-size: 14vh;
+	color: black;
+	padding-left: 20vh;
+}
+.altBoxYazi{
+	text-align: center;
+	font-size: 2.5vh;
+	color: black;
+}
+.altBox-baslik{
+	font-size: 4vh;
+	color: black;
+	display: grid;
+	justify-content: center;
+}
